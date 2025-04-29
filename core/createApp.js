@@ -1,5 +1,5 @@
 import { createElement } from './vdom.js';
-import { render } from './render.js';
+import { render } from './rerender.js';
 
 export let isDebugMode = false;
 

@@ -1,4 +1,4 @@
-import { rerender } from './render.js';
+import { rerender } from './rerender.js';
 
 export function useState(initialState = {}) {
   let listeners = new Set();

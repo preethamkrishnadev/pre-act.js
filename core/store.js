@@ -1,4 +1,4 @@
-import { rerender } from './render.js';
+import { rerender } from './rerender.js';
 
 const globalStore = {};
 let storeListeners = new Set();

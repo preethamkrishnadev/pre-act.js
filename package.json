@@ -1,19 +1,31 @@
 {
     "name": "pre-act",
     "version": "0.1.0",
-    "description": "Pre-Act.js — Lightweight React/Vue inspired frontend framework for fast Laravel and Vite apps.",
-    "main": "pre-act.js",
+    "main": "dist/pre-act.umd.js",
+    "module": "dist/pre-act.esm.js",
+    "description": "Pre-Act.js — A Modern Lightweight Frontend Framework (React + Vue Inspired)",
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/preethamkrishnadev/pre-act.js.git"
+    },
     "keywords": [
-      "javascript",
-      "framework",
-      "frontend",
-      "react",
-      "vue",
-      "vite",
-      "laravel",
-      "preact"
+        "javascript",
+        "frontend",
+        "framework",
+        "react",
+        "vue",
+        "vite",
+        "laravel",
+        "preact",
+        "tailwind"
     ],
-    "author": "Your Name",
-    "license": "MIT"
-  }
-  
+    "author": "PARTHA PREETHAM KRISHNA M L",
+    "license": "MIT",
+    "devDependencies": {
+        "rollup": "^2.79.2",
+        "rollup-plugin-terser": "^7.0.2"
+    }
+}
