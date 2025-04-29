@@ -1,9 +1,13 @@
 {
-    "name": "pre-act",
-    "version": "0.1.0",
+    "name": "@preethamkrishna/pre-act.js",
+    "version": "0.1.2",
     "main": "dist/pre-act.umd.js",
     "module": "dist/pre-act.esm.js",
     "description": "Pre-Act.js — A Modern Lightweight Frontend Framework (React + Vue Inspired)",
+    "bin": {
+        "create-pre-act": "index.js"
+    },
+    "type": "module",
     "scripts": {
         "build": "rollup -c"
     },
