@@ -1,4 +1,4 @@
-import { isDebugMode } from './createApp.js';
+import preactConfig from './config.js';
 import { logEvent } from './logger.js';
 import { triggerEvent, registerListener } from './events.js';
 import { $store, setStoreValue } from './store.js';
@@ -13,7 +13,7 @@ export function rerender() {
   // Add rerender logic if needed for future diff optimization
 }
 
-function createDomElement(vnode) {
+export function createDomElement(vnode) {
   if (typeof vnode === 'string' || typeof vnode === 'number') {
     return document.createTextNode(vnode);
   }
@@ -24,7 +24,7 @@ function createDomElement(vnode) {
     const el = createDomElement(componentVNode);
     
     setTimeout(() => {
-      if (isDebugMode) node.log('mounted');
+      if (preactConfig.isDebugMode) node.log('mounted');
     }, 0);
     
     return el;
@@ -77,7 +77,7 @@ function createNode(vnode) {
     }
   };
 
-  if (isDebugMode) {
+  if (preactConfig.isDebugMode) {
     node.log('created');
   }
   

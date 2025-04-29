@@ -18,3 +18,6 @@ A modern ultra-lightweight frontend framework combining the best of React and Vu
 
 ```bash
 npm install pre-act
+
+
+[![npm](https://img.shields.io/npm/v/@preethamkrishna/pre-act.js.svg)](https://www.npmjs.com/package/@preethamkrishna/pre-act.js)

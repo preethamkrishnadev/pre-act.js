@@ -1,7 +1,6 @@
 import { createElement } from './vdom.js';
-import { render } from './rerender.js';
-
-export let isDebugMode = false;
+import { render } from './render.js';
+import preactConfig from './config.js';
 
 export function createApp(App, selector = '#app', props = {}) {
   const container = document.querySelector(selector);
@@ -18,9 +17,9 @@ export function createApp(App, selector = '#app', props = {}) {
   };
 
   Object.defineProperty(app, 'debug', {
-    get: () => isDebugMode,
+    get: () => preactConfig.isDebugMode,
     set: (value) => {
-      isDebugMode = value;
+      preactConfig.isDebugMode = value;
       window.__preact_debug__ = value;
     }
   });
