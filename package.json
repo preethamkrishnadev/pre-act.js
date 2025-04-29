@@ -1,0 +1,19 @@
+{
+    "name": "pre-act",
+    "version": "0.1.0",
+    "description": "Pre-Act.js — Lightweight React/Vue inspired frontend framework for fast Laravel and Vite apps.",
+    "main": "pre-act.js",
+    "keywords": [
+      "javascript",
+      "framework",
+      "frontend",
+      "react",
+      "vue",
+      "vite",
+      "laravel",
+      "preact"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
